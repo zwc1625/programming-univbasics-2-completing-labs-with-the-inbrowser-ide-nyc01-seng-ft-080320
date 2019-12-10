@@ -1,7 +1,7 @@
-# Lesson Title
+# Lab Title
 
-All Readmes should follow a similar format when it comes to structure. Please
-refer to the [style guide][] for a detailed explaination of standards.
+All Readmes and Labs should follow a similar format when it comes to structure.
+Please refer to the [style guide][] for a detailed explaination of standards.
 
 ## Learning Goals
 
@@ -19,6 +19,10 @@ Lessons often contain multiple sections of content. Use the Learning Goals
 you've defined to guide you on what sections and sub-sections are needed.
 
 Refer to [this guide for assistance when writing Readmes][readmes]
+
+In Labs, clear answers are often omitted. However, some guidance may be
+necessary to ensure students have the necessary information required to figure
+out the task themselves.
 
 ## Conclusion
 
