@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Hello and welcome to your first lab! In this lesson, we're going to test some
+Hello, and welcome to your first lab! In this lesson, we're going to test some
 code. _Your code_.
 
 So far, we've learned that we can run code by using `ruby filename`. Whatever is
@@ -22,20 +22,19 @@ without errors.
 [the social network]: https://en.wikipedia.org/wiki/The_Social_Network
 [ex machina]: https://en.wikipedia.org/wiki/Ex_Machina_(film)
 
-While there are some extremely skilled programmers out there, the reality is
+While there are some incredibly skilled programmers out there, the reality is
 that most programmers don't do this. Professional programming takes process and
 consideration and time. Programs take a lot of effort to build and can quickly
-get very complex. Programmers make mistakes - you will experience errors. Many
+get very complicated. Programmers make mistakes - you will experience errors. Many
 errors.
 
-It is very common for programmers to run (and rerun, and rerun) code over and
-over as they build a program. One main reason for this is that it helps catch
-errors as they happen. If running a Ruby file causes an error, but the file was
-working fine just a few minutes ago, something has changed during that time that
-has broken the code. The error will also contain some information about what went
-wrong.
+It is common for programmers to run (and rerun, and rerun) code over and over as
+they build a program. One main reason for this is that it helps catch errors as
+they happen. If running a Ruby file causes an error, but the file worked fine
+just a few minutes ago, something has changed during that time that has broken
+the code. The error will also contain some information about what went wrong.
 
-Removing errors and debugging your own code is something you will become more
+Removing errors and debugging your code is something you will become more
 familiar with over time, and we will introduce some tools and methods for
 debugging in upcoming lessons. For now, though, we're going to introduce another
 important programming concept - _testing_ our code.
@@ -44,7 +43,7 @@ A test is Ruby code that _runs_ Ruby code to verify the output. Like running a
 file repeatedly to check for errors, tests are a way to receive feedback
 continuously as you write your code. In professional program development, tests
 are often written to ensure code works as intended. For instance, tests can help
-prevent bugs from being introduced with updates - i.g. some new code might break
+prevent bugs from being introduced with updates - i.g. Some new code might break
 something that was previously working.
 
 In this course, we are going to use tests slightly differently. In every lab,
@@ -52,17 +51,17 @@ the tests will be provided - you must write the code to satisfy the tests. When
 your tests pass, you'll be able to move on to the next lesson.
 
 This first lab has a single test. In an earlier lesson, we walked through
-creating a Ruby file, adding a line of code and running the file. Now, we're
+creating a Ruby file, adding a line of code, and running the file. Now, we're
 going to test those abilities.
 
 ## Opening the Lab
 
 First, open the in-browser IDE. Note that since this is a lab, instead of the
-**Sandbox** button, there is a **Open IDE** button. Clicking this will still
+**Sandbox** button, there is an **Open IDE** button. Clicking this will still
 open the IDE. However, instead of the Sandbox, the IDE will display files
-specific to this lesson. In the terminal at the bottom, you will likely see
-some acitvity as the IDE is setting up the lesson. When this is done, you will
-be ready to start.
+specific to this lesson. In the terminal at the bottom, you will likely see some
+activity as the IDE is setting up the lesson. When this is finished, you will be
+ready to start.
 
 ## Running Tests
 
@@ -73,13 +72,13 @@ Learn to the right of the IDE.
 
 ## Solving This Lab
 
-For the next few labs, we'll walkthrough how to solve each lab. As you progress,
-labs will become more difficult and it will be up to you to try solutions, read
+For the next few labs, we'll walk through how to solve each lab. As you progress,
+labs will become more difficult, and it will be up to you to try solutions, read
 test feedback, and modify your code without direct guidance.
 
-When starting a lab, it is often good to first take a look at the tests results,
-even though we know they aren't passing. Run `learn` and you should see the
-following:
+When starting a lab, it is often good to first take a look at the results of the
+tests, even though we know they aren't passing. Run `learn`, and you should see
+the following:
 
 ```sh
 lib/your_solution.rb
@@ -118,8 +117,8 @@ folder is present called `lib`, and in it is a file `your_solution.rb`.
 If we run `ruby lib/your_solution.rb` right now, nothing happens. Let's change
 that!
 
-In the previous lesson, we learned about outputting text and that is exactly
-what we need to do here. Add the following code to `lib/your_solution.rb`:
+In the previous lesson, we learned about outputting text, and that is what we
+need to do here. Add the following code to `lib/your_solution.rb`:
 
 ```ruby
 # ./lib/your_solution.rb
@@ -142,11 +141,22 @@ Finished in 0.00568 seconds (files took 0.19164 seconds to load)
 1 example, 0 failures
 ```
 
+> **Note:** We know from the last lesson that `puts` is not the only way to
+> output text. _However_, if you read the original test results closely you'll
+> see that the test is specifically looking for `puts`:
+>
+> ```sh
+> (#<IO:<STDOUT>>).puts("Hello World!")
+> ```
+>
+> There may be times when you've written perfectly valid code, but it isn't
+> what the test is looking for.
+
 ## Submitting Your Work
 
 With this test passing, you are almost ready to move on. The last thing you need
 to do is submit your work. To do this, run `learn submit`. You should see a
-change in Learn indicating you've completed the lesson and can continue on.
+change in Learn indicating you've completed the lesson and can continue.
 
 ## Conclusion
 
@@ -154,10 +164,11 @@ We believe that labs give you a chance to practice your skills. In Programming
 as Conversation Part 1, we just wanted you to feel the magic and awesomeness of
 programming. We didn't want to crimp that joy with labs. But now you know enough
 to do some pretty powerful stuff. Tests will confirm for both you and us that
-you're really getting the hang of this stuff. That's such an awesome feeling, we
-can't wait to share it with you!
+you're really getting the hang of this stuff. That's such an excellent feeling,
+and we can't wait to share it with you!
 
-A number of upcoming labs will review and expand on the concepts discussed here,
-so don't worry if some of the test output didn't make sense. We'll walk you
-through the first few labs. Eventually, we'll take a deeper look at how testing
-works so you can not only understand how our labs work, but how to write your own!
+Several upcoming labs will review and expand on the concepts discussed here, so
+don't worry if some of the test output didn't make sense. We'll walk you through
+the first few labs. Eventually, we'll take a more-in-depth look at how testing
+works so you can not only understand how our labs work, but how to write your
+own!
