@@ -146,7 +146,7 @@ Finished in 0.00568 seconds (files took 0.19164 seconds to load)
 > see that the test is specifically looking for `puts`:
 >
 > ```sh
-> (#<IO:<STDOUT>>).puts("Hello World!")
+> expect(STDOUT).to receive(:puts).with('Hello World!')
 > ```
 >
 > There may be times when you've written perfectly valid code, but it isn't
