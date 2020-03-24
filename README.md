@@ -39,40 +39,62 @@ familiar with over time, and we will introduce some tools and methods for
 debugging in upcoming lessons. For now, though, we're going to introduce another
 important programming concept - _testing_ our code.
 
-A test is Ruby code that _runs_ Ruby code to verify the output. Like running a
-file repeatedly to check for errors, tests are a way to receive feedback
+A test is Ruby code that _runs_ Ruby code to verify the output. Tests are a way to receive feedback
 continuously as you write your code. In professional program development, tests
 are often written to ensure code works as intended. For instance, tests can help
 prevent bugs from being introduced with updates - i.g. Some new code might break
 something that was previously working.
 
-In this course, we are going to use tests slightly differently. In every lab,
-the tests will be provided - you must write the code to satisfy the tests. When
-your tests pass, you'll be able to move on to the next lesson.
+In this course, we are going to use tests slightly differently. Tests will be
+provided in every lab - you must write the code to satisfy the tests. When your
+tests pass, you'll be ready to move on to the next lesson.
 
-This first lab has a single test. In an earlier lesson, we walked through
-creating a Ruby file, adding a line of code, and running the file. Now, we're
-going to test those abilities.
+This first lab has a single test. In an earlier lesson, we walked through adding 
+a line of code in a file and running the file. We're going to test these abilities
+while you learn how to use the IDE.
 
 ## Opening the Lab
 
 First, open the in-browser IDE. Note that since this is a lab, instead of the
 **Sandbox** button, there is an **Open IDE** button. Clicking this will still
 open the IDE. However, instead of the Sandbox, the IDE will display files
-specific to this lesson. In the terminal at the bottom, you will likely see some
-activity as the IDE is setting up the lesson. When this is finished, you will be
-ready to start.
+specific to this lesson. 
 
-## Running Tests
+In the terminal at the bottom, you will likely see some activity as the IDE is
+setting up the lesson. You will be ready to start when this is finished and you
+can type in the console.
 
-For all labs provided by Learn, to run a test, type `learn` into the command
+## Running Tests and Submitting Your Work
+
+For all labs provided through Learn, to run a test, type `learn` into the command
 line. This command will run the tests and report the results back to the Learn
-platform. If you pass all the tests, you will see the test status change in
-Learn to the right of the IDE.
+platform.
+
+You can and should run `learn` often while you are working on labs. Every time you do,
+you get feedback in the form of test output. This output often includes hints on what
+you need to do to. If your code is passes the tests, you'll see `0 failures`. Learn will
+also recognize your success and change the status lights to the right of the IDE. 
+
+Once you've passed all of the tests, you must submit your work to register completion in
+Learn. You can do this by running `learn submit`. Once your work is submitted, you can
+continue to the next lesson when ready.
+
+## Instructions
+
+You have a single task to complete in this lab:
+
+- the file `lib/your_solution.rb` should output `"Hello World!"` using `puts`
+
+You might be able to figure this out without test feedback. For this first lab, though,
+we encourage you to follow along below to get a sense of the workflow for solving labs.
 
 ## Solving This Lab
 
-For the next few labs, we'll walk through how to solve each lab. As you progress,
+For the next few labs, we will walk through the solution. We encourage you
+to try on solving on your own, but if you get stuck, use the lesson's instructions
+to guide you to the solution.
+
+As you progress,
 labs will become more difficult, and it will be up to you to try solutions, read
 test feedback, and modify your code without direct guidance.
 
